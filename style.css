@@ -1,0 +1,171 @@
+/* Prperties of the background image of the octcat */
+body::after {
+    content: "";
+    background: url("assets/octcat.jpg");
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  /* Style of the div responsible for the display of user messages  */
+  /* like not finding a user or network issue */
+  .userMessage {
+    position: fixed;
+    left: 990px;
+    top: 550px;
+    width: 200px;
+    height: 100px;
+    /* border: 5px solid rgb(71, 130, 138);
+    border-spacing: 1px; 
+    border-radius: 20px; */
+    display: table;
+    opacity: 0.9;
+    font-size: 20px;
+    color: rgb(95, 35, 82);
+    }
+
+/* Style of the submit form in which the 
+   input's div are defined
+   Note that the positioning is fixed. */
+.submitForm {
+    position: fixed;
+    background-color: rgb(145, 161, 161);
+    right: 350px;
+    top: 200px;
+    width: 500px;
+    height: 300px;
+    border: 5px solid rgb(71, 130, 138);
+    border-spacing: 1px; 
+    border-radius: 20px;
+    display: table;
+    opacity: 0.9;
+    }
+
+/* Changing the color of the submit form border 
+   if it is hovered upon */
+.submitForm:hover{
+    border: 5px solid #3e6e2f;
+}
+
+/* A message at the top of the submit form 
+   indicating the purpose of the form */
+#submitFormMessage {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    
+}
+
+/* Style of a text box used for writing the 
+   username of the github account */
+#submitFormTextBox {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    width: 400px;
+    height: 30px;
+}
+
+/* Style of the submit button for the username input form */
+#submitFormSubmitButton {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    right: 50px;
+    width: 400px;
+    height: 30px;
+    background-color: rgb(101, 119, 80);
+    border-radius: 8px;
+}
+
+/* A class marking the area of the information form which
+   the  display of fetched information is handled in.*/
+.informationForm {
+    position: fixed;
+    background-color: rgb(145, 161, 161);
+    left: 350px;
+    top: 200px;
+    width: 500px;
+    height: 550px;
+    border: 5px solid rgb(71, 130, 138);
+    border-spacing: 1px; 
+    border-radius: 20px;
+    display: table;
+    opacity: 0.9;
+}
+
+/* A paragraph displaying the name of the account */
+#infoName {
+    display: table-cell;
+    position: absolute;
+    top: 20px;
+    left: 240px;
+    width: 200px;
+}
+
+/* A paragraph displaying the location of the user */
+#infoLocation {
+    display: table-cell;
+    position: absolute;
+    top: 60px;
+    left: 240px;
+    width: 200px;
+}
+
+/* A paragraph displaying the location of the user */
+#infoPicture {
+    display: table-cell;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+/* The acutual image tag for the avatar of the user */
+#infoAvatar {
+    width: 100%;
+    height: auto;
+}
+
+/* The biography of the user */
+#infoBio {
+    display: table-cell;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+/* The blog of the user */
+#infoBlog {
+    display: table-cell;
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 200px;
+}
+
+/* The favorate language of the user */
+#infoLanguage {
+    display: table-cell;
+    position: absolute;
+    top: 140px;
+    left: 240px;
+    width: 200px;
+}
